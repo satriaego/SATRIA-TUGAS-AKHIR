@@ -1,100 +1,66 @@
-# 🌀 Smart Fan Control System using WhatsApp API and Sugeno Fuzzy Logic
+# 🚀 SmartFan WA
 
-## 📌 Description
+**Sistem Pengendalian dan Pemantauan Kecepatan Motor AC Berbasis WhatsApp API dan Logika Fuzzy Sugeno**
 
-This project is a final thesis implementation titled:  
-**"Rancang Bangun Sistem Pengendalian dan Pemantauan Kecepatan Motor AC Berbasis WhatsApp API dan Logika Fuzzy Sugeno"**  
-or in English:  
-**"Design and Development of an AC Motor Speed Control and Monitoring System Based on WhatsApp API and Sugeno Fuzzy Logic"**.
-
-This system offers an innovative approach to automation by integrating a widely used communication platform—**WhatsApp**—with an intelligent decision-making algorithm, **Sugeno Fuzzy Logic**. It allows real-time control and monitoring of fan motor speed based on two parameters:
-
-- 🌡️ Room temperature  
-- 👥 Estimated number of people
-
-All interactions happen via WhatsApp messages, making the system intuitive, accessible, and user-friendly.
+> *SmartFan WA memanfaatkan WhatsApp sebagai antarmuka kendali cerdas untuk sistem motor AC.  
+Dengan menggabungkan platform komunikasi harian dan logika fuzzy Sugeno, sistem ini membuktikan bahwa otomasi cerdas bisa diakses dari genggaman tangan—mudah, efisien, dan adaptif.  
+Proyek ini menjembatani solusi teknik dengan kenyamanan pengguna modern.*
 
 ---
 
-## 🎯 Key Features
+## 🎯 Fitur Utama
 
-- ✅ Control motor speed remotely through WhatsApp commands  
-- 🔍 Real-time monitoring with anomaly detection and notifications  
-- 🧠 Adaptive logic system using Sugeno Fuzzy Inference  
-- 📈 Experimental performance evaluation  
-- ⚡ Aims to improve energy efficiency and user comfort  
-
----
-
-## 🛠️ Tech Stack
-
-| Component         | Description                                                |
-|------------------|------------------------------------------------------------|
-| 🧠 Fuzzy Logic    | Sugeno-type for adaptive speed decision                    |
-| 🌐 WhatsApp API   | Used as communication interface (Baileys / WWeb.js / etc.) |
-| 🔌 Microcontroller| ESP32 or Arduino (based on your setup)                    |
-| 🔧 Backend        | Node.js + MQTT (or Python depending on your implementation)|
-| 📊 Monitoring     | Serial output, JSON logs, or WhatsApp notifications        |
+- 📲 **Kontrol via WhatsApp** — Kirim perintah seperti “Fan High” atau “Mode Otomatis” langsung melalui chat.  
+- 🧠 **Logika Fuzzy Sugeno** — Menyesuaikan kecepatan kipas secara otomatis berdasarkan suhu & estimasi jumlah orang.  
+- ⚙️ **Mode Manual dan Otomatis** — Bebas memilih antara kendali langsung atau berbasis logika cerdas.  
+- 🚨 **Notifikasi Anomali** — Sistem mengirim peringatan ketika terdeteksi gangguan atau ketidaksesuaian sistem.  
+- 👤 **Otorisasi Pengguna** — Hanya pengguna tertentu yang dapat memberikan perintah ke sistem.  
 
 ---
 
-## 🚀 How It Works
+## 📝 Penjelasan Proyek
 
-1. User sends a command via WhatsApp (e.g., **“Fan speed: High”**).  
-2. The system receives the message and parses the command.  
-3. Fuzzy logic evaluates environment variables (temperature + people count).  
-4. The system sends commands to control the fan speed accordingly.  
-5. If an anomaly is detected (e.g., speed mismatch or failure), a WhatsApp alert is sent.  
-
----
-
-## 📷 Demo Screenshots / Videos
-
-> *(Embed demo images or link to videos here to showcase the project)*  
-Example:  
-[📼 Demo Video](https://drive.google.com/your-demo-video-link)
+> **SmartFan WA** adalah proyek tugas akhir yang menggabungkan WhatsApp API dengan logika fuzzy Sugeno untuk mengontrol kecepatan motor AC.  
+> Sistem ini menggunakan suhu ruangan dan estimasi jumlah orang sebagai parameter input yang diolah oleh fuzzy logic untuk menentukan kecepatan kipas secara otomatis.  
+> Perintah dikirim melalui WhatsApp, membuat sistem ini mudah diakses, bahkan tanpa aplikasi khusus.  
+> Sistem juga dilengkapi notifikasi jika terjadi kegagalan sistem atau anomali pada pengoperasian.
 
 ---
 
-## 🌱 Growth Mindset in Action
+## 💡 Nilai Proyek
 
-This project started as a personal challenge—to solve a real-world problem using common tools in everyday life.  
-Throughout the development process, I:
-
-- Learned and implemented fuzzy logic systems from scratch.  
-- Integrated WhatsApp API into an automation system using open-source libraries.  
-- Experimented with environmental sensing and real-time decision-making.  
-- Iteratively tested and improved the system based on real user scenarios.
-
-> I believe great solutions start with curiosity and the courage to try something new—even if it’s not perfect at first. This project is a reflection of that mindset.
+| 🔑 Nilai              | 💬 Implementasi di Proyek                                                                 |
+|----------------------|---------------------------------------------------------------------------------------------|
+| 🔥 **Potential**      | Mengubah WhatsApp menjadi alat kontrol perangkat nyata. Cocok untuk rumah pintar dan industri ringan. |
+| 🎨 **Creativity**     | Menggabungkan fuzzy logic dengan WhatsApp API sebagai antarmuka kontrol yang mudah diakses. |
+| 🌱 **Growth Mindset** | Dibangun melalui proses belajar, eksplorasi, debugging, dan eksperimen nyata untuk menyempurnakan sistem. |
 
 ---
 
-## ✨ Why This Project Matters
+## 🛠️ Teknologi yang Digunakan
 
-This project shows that automation doesn’t have to rely on complex apps or expensive UIs.  
-By using WhatsApp—a tool millions already use every day—we make smart home systems more **inclusive**, **efficient**, and **adaptable**.
+| Komponen             | Keterangan                                                  |
+|----------------------|-------------------------------------------------------------|
+| 🌐 WhatsApp API       | Komunikasi via chat menggunakan library seperti Baileys     |
+| 🧠 Fuzzy Logic Sugeno | Untuk pengambilan keputusan berdasarkan suhu & crowd        |
+| 📶 Node.js + MQTT     | Backend & komunikasi antar sistem                           |
+| 🔌 ESP32 / Arduino    | Kontrol aktuator kecepatan motor                            |
+| 🌡️ Sensor             | Pengukuran suhu dan estimasi jumlah orang                   |
 
----
-
-## 💡 Future Ideas
-
-- 🎙️ Add voice command support (e.g., using WhatsApp voice-to-text)  
-- 🎥 Integrate AI-based person detection via camera  
-- 🔌 Extend to other appliances (AC, lights, smart plugs)
 
 ---
 
-## 📁 Repository Structure
+## 📬 Kontak
 
-```bash
-📦 fuzzy-whatsapp-control
- ┣ 📂 src
- ┃ ┣ 📜 fuzzy_logic.js
- ┃ ┣ 📜 whatsapp_bot.js
- ┣ 📂 microcontroller
- ┃ ┣ 📜 esp32_code.ino
- ┣ 📂 docs
- ┃ ┣ 📜 abstract.pdf
- ┣ 📜 README.md
- ┣ 📜 LICENSE
+- **Nama**: Satria  
+- **Email**: [satriaego.21038@mhs.unesa.ac.id](mailto:satriaego.21038@mhs.unesa.ac.id)  
+- **WhatsApp**: [Klik untuk Chat](https://wa.me/6285708210771)
+
+---
+
+## 🌟 Penutup
+
+> *SmartFan WA bukan sekadar proyek akademik, melainkan representasi dari bagaimana teknologi cerdas dapat menyatu dengan platform harian yang akrab.  
+Dengan pendekatan sederhana namun kreatif, sistem ini membuktikan bahwa otomasi tidak selalu membutuhkan alat mahal atau sistem kompleks—cukup WhatsApp dan logika cerdas di baliknya.*
+
+---
