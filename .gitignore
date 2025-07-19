@@ -1,0 +1,15 @@
+# Ignore dependencies
+node_modules/
+
+# Ignore authentication/session data
+satriaAuth/
+
+# Ignore logs and temporary files
+*.log
+# .env
+.env
+config.h
+config.js
+callFunction
+users.json
+fuzzy

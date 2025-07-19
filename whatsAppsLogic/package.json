@@ -1,0 +1,21 @@
+{
+  "name": "tes-wa-baileys",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.16",
+    "baileys": "github:WhiskeySockets/Baileys",
+    "dotenv": "^16.4.7",
+    "mqtt": "^5.10.4",
+    "nodemon": "^3.1.10",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
