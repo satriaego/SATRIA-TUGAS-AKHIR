@@ -52,7 +52,6 @@ Proyek ini menjembatani solusi teknik dengan kenyamanan pengguna modern.*
 
 ## 📬 Kontak
 
-- **Nama**: Satria  
 - **Email**: [satriaego.21038@mhs.unesa.ac.id](mailto:satriaego.21038@mhs.unesa.ac.id)  
 - **WhatsApp**: [Klik untuk Chat](https://wa.me/6285708210771)
 
